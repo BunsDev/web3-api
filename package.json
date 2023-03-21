@@ -7,6 +7,9 @@
   "author": "Buns <bunsthedev@gmail.com>",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "start": "node index.ts"
+  },
   "dependencies": {
     "@koa/cors": "^3.1.0",
     "koa": "^2.13.3",
