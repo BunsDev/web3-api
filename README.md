@@ -25,8 +25,5 @@ Create an account on Vercel to acquire the data direct from a URL.
   - Your token to the tokenlist.json
 
 ### **Further Considerations**
-I prefer a test -> prod workflow. So, I push to main, then PR to the prod branch. 
-
-The prod branch then updates the domain I use for whatever production-related purposes.
-
-This way, I am able to ensure the API works as expected prior to updating live production data.
+- Use main to test, the PR to prod for production URL.
+- Report the unadjusted results to CG and CMC.
