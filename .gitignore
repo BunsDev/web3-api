@@ -1,0 +1,17 @@
+# global
+.DS_Store
+node_modules
+dist
+
+# private
+.env
+.env.local
+.env.*.local
+
+# logs // editor // test
+*.log
+yarn-error.log*
+yarn-debug.log*
+.vscode
+.vercel
+coverage

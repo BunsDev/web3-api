@@ -1,0 +1,26 @@
+{
+  "name": "web3-api",
+  "version": "1.0.0",
+  "description": "Create an API that gets data from the blockchain and outputs to an external URL.",
+  "main": "index.js",
+  "repository": "https://github.com/BunsDev/web3-api.git",
+  "author": "Buns <bunsthedev@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@koa/cors": "^3.1.0",
+    "koa": "^2.13.3",
+    "koa-bodyparser": "^4.3.0",
+    "koa-conditional-get": "^3.0.0",
+    "koa-etag": "^4.0.0",
+    "koa-helmet": "^6.1.0",
+    "koa-router": "^10.1.1",
+    "web3": "^1.6.0"
+  },
+  "devDependencies": {},
+  "lint-staged": {
+    "*.ts": "prettier --write",
+    "*.js": "prettier --write",
+    "*.json": "prettier --write"
+  }
+}
