@@ -1,7 +1,7 @@
 const BN = require("bn.js")
 const API_BASE_URL = process.env.API_BASE_URL || 'http://localhost:3002'
-const CHAIN_ID = process.env.RPC || 250
-const RPC = process.env.RPC || 'https://rpc.ankr.com/fantom'
+const CHAIN_ID = process.env.CHAIN_ID || 250
+const RPC = process.env.RPC_URL || 'https://rpc.ankr.com/fantom'
 
 // addresses //
 const SOUL="0xe2fb177009FF39F52C0134E8007FA0e4BaAcBd07"
