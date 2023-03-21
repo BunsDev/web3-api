@@ -18,11 +18,11 @@ Create an account on Vercel to acquire the data direct from a URL.
 - **You may need to update:** 
   - CHAIN_ID (constants)
   - RPC_URL (constants)
-  - tokenlist.json (utils)
 
-- **You will need to add:**
-  - Your token to constants.
-  - Your token to the tokenlist.json
+- **You will need to update:**
+  - TOKEN_ADDRESS (constants)
+  - TOKEN_DECIMALS (constants)
+  - MAX_SUPPLY (constants)
 
 ### **Further Considerations**
 - Use main to test, the PR to prod for production URL.

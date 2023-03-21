@@ -2,11 +2,11 @@
 
 const { web3Factory } = require("../../utils/web3")
 const ERC20ContractABI = require('../../abis/ERC20ContractABI.json')
-const { _1E18, CHAIN_ID, DAO_ADDRESS, SOUL } = require("../../constants")
+const { _1E18, CHAIN_ID, DAO_ADDRESS, TOKEN_ADDRESS, MAX_SUPPLY, TOKEN_DECIMALS } = require("../../constants")
 const BN = require('bn.js')
 
 const web3 = web3Factory(CHAIN_ID)
-const tokenContract = new web3.eth.Contract(ERC20ContractABI, SOUL)
+const tokenContract = new web3.eth.Contract(ERC20ContractABI, TOKEN_ADDRESS)
 
 class Cache {
     minElapsedTimeInMs = 10000 // 10 seconds
@@ -31,7 +31,7 @@ class Cache {
 
     async getMaxSupply() {
         if (!this.cachedMaxSupply) {
-            const maxSupply = 250_000_000 * 10**18
+            const maxSupply = MAX_SUPPLY * 10**TOKEN_DECIMALS
             const lastRequestTimestamp = Date.now()
             this.cachedMaxSupply = {maxSupply, lastRequestTimestamp}
         }
